@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  /* Needed for pseudo-element positioning */
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  /* Place the pseudo-element behind the main content */
+  background: url(./images/royal-enfield.jpg) center/cover;
+  filter: blur(5px);
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+main section {
+  height: 100%;
+  flex-grow: 1;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  filter: grayscale(1);
+  transition: flex-grow 0.4s cubic-bezier(0.25, 1, 0.5, 1), filter 0.4s ease-in-out;
+}
+main section:hover {
+  flex-grow: 3;
+  filter: grayscale(0);
+}
+main section:nth-child(1) {
+  background-image: url(./images/bike1.jpg);
+}
+main section:nth-child(2) {
+  background-image: url(./images/bike2.jpg);
+}
+main section:nth-child(3) {
+  background-image: url(./images/bike3.jpg);
+}
+main section:nth-child(4) {
+  background-image: url(./images/bike4.jpg);
+}
+main section:nth-child(5) {
+  background-image: url(./images/bike5.jpg);
+}/*# sourceMappingURL=style.css.map */
