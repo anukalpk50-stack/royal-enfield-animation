@@ -1,0 +1,65 @@
+                            * {
+                                margin: 0;
+                                padding: 0;
+                                box-sizing: border-box;
+                            }
+                            
+                            html,
+                            body {
+                                height: 100%;
+                                width: 100%;
+                                background-color: #1e1d1d;
+                                /* Added a light background for better visibility */
+                            }
+                            
+                            main {
+                                display: grid;
+                                height: 100vh;
+                                /* Use viewport height to fill the screen */
+                                width: 100%;
+                                padding: 10px;
+                                gap: 10px;
+                                /* Arrange the grid into two main rows */
+                                grid-template-areas: "left top top top" "left bottom-left bottom-center bottom-right";
+                                grid-template-rows: 2fr 1fr;
+                                /* Make top row taller */
+                                grid-template-columns: 1fr 1fr 1fr 1fr;
+                            }
+                            /* Assign grid areas to each element */
+                            
+                            .left {
+                                grid-area: left;
+                            }
+                            
+                            .top {
+                                grid-area: top;
+                            }
+                            
+                            .bottom-left {
+                                grid-area: bottom-left;
+                            }
+                            
+                            .bottom-center {
+                                grid-area: bottom-center;
+                            }
+                            
+                            .bottom-right {
+                                grid-area: bottom-right;
+                            }
+                            /* Style for all direct children of main */
+                            
+                            main>div {
+                                overflow: hidden;
+                                /* Hide parts of the image that don't fit */
+                                border-radius: 8px;
+                                /* Optional: for rounded corners */
+                            }
+                            /* Make images fill their container */
+                            
+                            main>div>img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                /* Crop image to fit container without distortion */
+                                object-position: center;
+                            }
