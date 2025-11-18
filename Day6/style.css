@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.center-content {
+    display: grid;
+    place-items: center;
+    gap: 50%;
+}
+
+#bulb {
+    height: 50vh;
+    width: 50vh;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    filter: drop-shadow(10px 10px rgb(72, 214, 7));
+}
+
+button {
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
