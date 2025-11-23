@@ -1,0 +1,63 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 150px;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+    color: white;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+button:active {
+    background-color: red;
+    color: green;
+}
