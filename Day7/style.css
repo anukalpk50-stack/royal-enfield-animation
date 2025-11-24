@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(2, 107, 23);
+}
+
+
+/* 
+button {
+    margin-bottom: 20px;
+    color: white;
+    background-color: royalblue;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: blue;
+    cursor: pointer;
+} */
+
+.card {
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.card p {
+    text-align: center;
+    padding: 10px;
+}
+
+.card p span {
+    font-weight: 600;
+    color: yellowgreen;
+}
+
+.outer {
+    margin-left: 5%;
+    height: 10%;
+    width: 90%;
+    border-radius: 50px;
+    background-color: aqua;
+}
+
+.inner {
+    height: 100%;
+    width: 0%;
+    background-color: red;
+    border-radius: 50px;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.bottom h2 {
+    font-size: 60px;
+}
+
+.bottom button {
+    height: 50px;
+    width: 150px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: royalblue;
+    color: white;
+    font-weight: 600;
+    cursor: progress;
+    /* border: none; */
+}
+
+.bottom button:active {
+    scale: 0.95;
+    cursor: pointer;
+}
