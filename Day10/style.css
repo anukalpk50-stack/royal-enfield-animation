@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+/* #main{
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+}
+#cursor{
+    height: 50px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+} */
+ h1{
+font-size: 20px;
+background-color: #333;;
+color: white;
+font-family: monospace;
+padding: 10px 30px;
+border-radius: 20px;
+ }
