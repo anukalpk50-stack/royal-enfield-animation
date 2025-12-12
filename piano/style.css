@@ -3,19 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  }
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #e3f2fd;
 }
 main{
-    width: 85%;
+    /* width: au; */
     background-color: #141414;
     border-radius: 20px;
     padding: 35px 40px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
     
 }
 main header h1{
@@ -45,6 +55,10 @@ main header h1{
     /* color: black; */
    
 }
+.piano-keys .white:hover{
+    background: linear-gradient(to bottom,#fff 0%,#eee 100%);
+    box-shadow:inset -5px 5px 20px rgba(0,0,0,0.2);
+}
 .piano-keys .white:active{
     background: linear-gradient(to bottom,#fff 0%,#eee 100%);
     box-shadow:inset -5px 5px 20px rgba(0,0,0,0.2);
@@ -62,7 +76,10 @@ main header h1{
     z-index: 2;
     margin: 0 -22px 0 -22px;
 }   
-
+.piano-keys .black:hover{
+    background: linear-gradient(to bottom,#000,#434343);
+    box-shadow:inset -5px 5px 20px rgba(255,255,255,0.1);
+}
 .piano-keys .black:active{
     background: linear-gradient(to bottom,#000,#434343);
     box-shadow:inset -5px 5px 20px rgba(255,255,255,0.1);
